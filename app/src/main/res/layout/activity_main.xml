@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <com.budiyev.android.codescanner.CodeScannerView
+        android:id="@+id/scanner_view"
+        android:layout_width="match_parent"
+        android:layout_height="450dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginBottom="5dp"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:gravity="center">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnReScan"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/corner"
+                    android:backgroundTint="@color/main_color"
+                    android:drawableTint="@color/white"
+                    android:padding="5dp"
+                    android:src="?android:attr/selectableItemBackground"
+                    android:text="Re-Scan"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white">
+
+                </androidx.appcompat.widget.AppCompatButton>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/tvResult"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/corner"
+                    android:hint="Result"
+                    android:gravity="start"
+                    android:minHeight="65dp"
+                    android:padding="5dp">
+
+                </androidx.appcompat.widget.AppCompatEditText>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:gravity="center">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnCopy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:background="@drawable/corner"
+                    android:backgroundTint="#5A5659"
+                    android:drawableStart="@drawable/baseline_content_copy_24"
+                    android:drawableTint="@color/white"
+                    android:padding="5dp"
+                    android:src="?android:attr/selectableItemBackground"
+                    android:text="Text Copied to Clipboard"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white">
+
+                </androidx.appcompat.widget.AppCompatButton>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnOpenInBrowser"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:background="@drawable/corner"
+                    android:backgroundTint="#516352"
+                    android:drawableStart="@drawable/baseline_open_in_browser_24"
+                    android:drawableTint="@color/white"
+                    android:padding="5dp"
+                    android:src="?android:attr/selectableItemBackground"
+                    android:text="Open In Browser"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white">
+
+                </androidx.appcompat.widget.AppCompatButton>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+
